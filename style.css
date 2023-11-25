@@ -6,7 +6,7 @@
 
 body {
   width: 100%;
-   background-color: rgb(237, 242, 245);;
+  background-color: rgb(237, 242, 245);
   /* padding-bottom: 16px; */
   height: auto;
   font-family: "Heebo", sans-serif;
@@ -21,7 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: auto;
- 
+
   /* background-image: url(./images/#hero-cover.3\ \(1\).png); */
 }
 
@@ -38,13 +38,18 @@ body {
 }
 
 .hero-div::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity (last value) as needed */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the opacity (last value) as needed */
   z-index: 1; /* Ensure the overlay is above the image */
 }
 
@@ -67,7 +72,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-   padding-top: 10px;
+  padding-top: 10px;
   /* justify-content: space-between; */
   background: transparent;
 }
@@ -204,9 +209,10 @@ body {
 .qualities-bottom {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 8vw;
   flex-direction: row;
-  margin-top: 5vh;
+  margin-top: 8vh;
   width: 100vw;
 
   background-color: white;
@@ -215,11 +221,20 @@ body {
 
 .qualities-bottom div {
   width: 16vw;
-  padding: 10px;
+  padding-top: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.qualities-bottom div img {
+  padding-bottom: 11px;
 }
 
 .satisfaction-bottom {
-  background-color: rgb(0, 140, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .second-page {
@@ -243,7 +258,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: grey;
+  background: transparent;
   padding-bottom: 8vh;
 }
 .top-industry h2 {
@@ -257,15 +272,22 @@ body {
   justify-content: space-between;
   text-align: center;
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
   padding-bottom: 15vh;
 }
 
 .profile-img div {
   width: 15vw;
   height: auto;
-  background-color: yellow;
+  background-color: rgb(255, 255, 255);
   padding: 0.5rem;
+  border: 2px solid rgb(209, 209, 209);
+
+  /* top: 0; */
+}
+
+.profile-img div p {
+  color: rgb(107, 107, 107);
 }
 
 .brands {
@@ -295,6 +317,7 @@ body {
     rgba(9, 9, 121, 1) 44%,
     rgba(239, 1, 22, 1) 99%
   );
+  padding-right: 14px;
 }
 
 .letter {
@@ -303,16 +326,36 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: red;
+  color: white;
+  /* background-color: red; */
   justify-content: center;
   text-align: start;
 }
 .subscribe {
-  padding: 20px;
+  padding: 2px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  height: auto;
+}
+
+.subscribe input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
 }
 
 .sub-btn {
   background-color: rgb(0, 140, 255);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 400;
+  width: 11vw;
 }
 
 .pricing {
@@ -410,14 +453,13 @@ body {
 }
 
 .standard {
-  height: 61vh;
+  height: 78vh;
 }
 
 .free {
   /* height: 85%; */
 }
 .premium {
-
 }
 
 .right-world img {
@@ -432,14 +474,17 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 80%;
+  padding-top: 6vh;
   z-index: 1;
   margin-top: -60vh;
   /* justify-content: space-between; */
-  padding-bottom: 7vh;
+  padding-bottom: 15vh;
 }
 .left-world {
   width: 50%;
   color: white;
+
 }
 .right-world {
   width: 50%;
@@ -451,7 +496,7 @@ body {
 }
 
 .background-blue {
-  background-color: rgb(16, 25, 33);
+  background-color: rgb(18, 39, 58);
   width: 100%;
   height: 60vh;
   z-index: -4;
@@ -468,32 +513,31 @@ body {
   flex-direction: row;
 
   width: 60%;
-
-  background-color: blue;
-  align-items: flex-end;
+  padding-bottom: 15vh;
+  /* background-color: blue; */
+  align-items: center;
   overflow: hidden;
-  vertical-align: top;
+  vertical-align: bottom;
 }
 
 .family-img img {
-  width: 14vw;
+  width: 14.5vw;
   height: 100%;
+  
 }
 .booking-input {
   /* width: 60%; */
-  background-color: yellow;
+  background-color: rgb(255, 255, 255);
   top: 0;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
-  padding: 10px;
+
+  padding: 9px;
   gap: 15px;
-  height: 100%;
-  /* flex-direction: column-reverse; */
   width: 70%;
 }
-
 
 .booking-input div select {
   width: 90%;
@@ -501,60 +545,73 @@ body {
   border-radius: 6px;
 }
 
-.booking-input div input{
+.booking-input div input {
   width: 86%;
-  padding: 5px;
+  padding: 7px;
   border-radius: 6px;
 }
-
-.footer-last-div{
+.booking-input div,
+.booking-input button {
+  padding-left: 2vw;
+}
+.footer-last-div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: purple;
+  /* background-color: purple; */
   padding-bottom: 11px;
 }
 
-.down-div{
+.down-div {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
+  width: 100vw;
+  justify-content: center;
+  background-color: white;
+}
+.down-div-centre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 65%;
   justify-content: space-between;
+  background-color: white;
 }
 
-.consulting{
-  width: 100%;
+.consulting {
+  width: 65%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* padding: 30px; */
-
+  padding-bottom: 30px;
 }
 
-.consulting-left{
+.consulting-left {
+  padding: 15px;
+  /* width: 81%; */
+}
+
+.consulting-right {
   padding: 15px;
 }
 
-.consulting-right{
-  padding: 15px;
-}
-
-.btn-book{
+.btn-book {
   background-color: rgb(0, 140, 255);
   color: white;
   padding: 10px;
   border-radius: 5px;
   border: none;
   font-weight: 400;
-  width: 90%;
-
+  width: 83%;
+  margin-top: 3vh;
+  margin-left: 2vw;;
 }
 
-.contact-btn{
+.contact-btn {
   background-color: rgb(0, 140, 255);
   color: white;
   padding: 10px;
@@ -564,35 +621,327 @@ body {
   width: 11vw;
 }
 
-.get-intouch p img{
+.get-intouch p img {
   width: 20px;
   height: auto;
 }
 
-.get-intouch p{
-  display: flex;
-  flex-direction: row;
-  align-items:center;
-  /* justify-content: center; */
-}
-
-.downest-nav{
+.get-intouch p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  /* justify-content: center; */
 }
 
-.socials img{
+.downest-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* vertical-align: top; */
+  justify-content: space-between;
+  width: 65%;
+}
+
+.socials img {
   width: 20px;
   height: auto;
   margin-left: 19px;
 }
 
-.socials{
+.socials {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.rate-options {
+  list-style: none;
+  padding: 0;
+}
+
+.rate-option {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.rate-option::before {
+  content: "\2713"; /* Unicode character for a bullet point */
+  font-size: 18px;
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.rate-option.free::before {
+  background-color: #2ecc71;
+}
+
+.rate-option.premium::before {
+  background-color: #8f9192;
+}
+
+
+@media (max-width: 900px){
+  body{
+    font-size: 61%;
+  }
+  .content-container{
+    width: 100%;
+  }
+  h1, h2, h3, h4, h5, h6, p{
+    font-size: 1.5rem;
+         font-size: 81%;
+  }
+  .txt{
+    width: 100%;
+  }
+  .txt h1{
+    font-size: 2rem;
+  }
+  .txt p{
+    font-size: 1rem;
+    width: 90%;
+  }
+  .top-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .nav-links{
+    display: none;
+  }
+  .signup-btn{
+    width: auto;
+  }
+  .btns{
+    display: flex;
+    flex-direction: column;
+  }
+  .qualities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .qualities div{
+    width: auto;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .qualities-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .qualities-bottom div{
+    width: 80%;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .second-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .industry{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .top-industry{
+    width: 100vw;
+    padding: 11px;
+  }
+  .top-industry h2{
+    font-size: 1.5rem;}
+
+   .top-industry p{
+    width: 81%;
+   }
+   .profile-img{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding-bottom: 18px;
+   }
+   .profile-img div{
+     width: 50%;
+     margin-bottom: 2vh;
+   }
+   .brands{
+    width: auto;
+    padding: 11px;
+    gap: 5vw;
+   }
+   .brands img{
+    width: 8vw;
+    height: auto;
+   }
+   .clr{
+      display: flex;
+      width: auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 11px;
+   }
+   .letter{
+    width: 100%;
+    font-size: 1rem;
+   }
+   .sub-btn{
+    width: auto;
+   }
+   .subscribe{
+    width: auto;
+    gap: 1vw;
+   }
+   .banners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 11px;
+    font-size: 1.3rem;
+    width: 91%;
+   }
+   .banners div button{
+    width: auto;
+   }
+   .banners div{
+    margin-top: 1vh;
+    width: 81%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .price-rating-tag h1{
+    font-size: 1.8rem;
+   }
+   .top-para{
+    font-size: 1.1rem;
+    /* width: 100%; */
+   }
+  .world{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .world-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: -60vh;
+    font-size: 1.8 rem;
+  }
+  .left-world{
+    width: 90%;
+  }
+  .left-world h1{
+    font-size: 1.4rem;
+  }
+  .right-world{
+    margin-top: 2vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .family-img{
+    display: none;
+  }
+  .bookings{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .booking-input{
+    width: 85%;
+  }
+  .consulting{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .consulting-left{
+    font-size: 1.2rem;
+  }
+  .contact-btn{
+    width: auto;
+  }
+  .down-div{
+    width: 100%;
+  }
+  .down-div-centre{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 11px;
+  }
+  .get-intouch{
+    width: 61%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin-bottom: 2vh;
+    /* text-align: left; */
+  }
+   .get-intouch p{
+    color: #8f9192;
+   }
+   .downest-nav{
+    width: 100%;
+    font-size: .7rem;
+   }
+   .right{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    padding-top: 11px;
+    left: 0;
+   }
+
+
+
 }
