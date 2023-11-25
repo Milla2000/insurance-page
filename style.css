@@ -532,10 +532,23 @@ body {
   vertical-align: bottom;
 }
 
-.family-img img {
+.family-img {
   width: 14.5vw;
   height: 100%;
+
   
+}
+
+.family-img-image{
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  background-image: 
+    url("./images/contact.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 71.2vh;
+
 }
 .booking-input {
   /* width: 60%; */
