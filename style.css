@@ -199,7 +199,10 @@ body {
 .qualities div {
   width: 18vw;
   padding: 20px;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
   height: 20vh;
   background: transparent;
 }
@@ -837,8 +840,11 @@ body {
     align-items: center;
     justify-content: center;
    }
-   .price-rating-tag h1{
-    font-size: 1.8rem;
+   .top-rates h1{
+    font-size: 1.5rem;
+   }
+   .price-rating-tag h2{
+    font-size: 1.3rem;
    }
    .top-para{
     font-size: 1.1rem;
